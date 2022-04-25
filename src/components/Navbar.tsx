@@ -8,7 +8,7 @@ const Navbar = () => {
       <Toolbar>
         <IconButton size="large"><MenuIcon/></IconButton>
         <Box sx={{ display: "flex", justifyContent: "center", height: "2.5rem", flexGrow: 1, padding: "1rem 0" }}>
-          <img src={logoOnly}/>
+          <img alt="logo" src={logoOnly}/>
         </Box>
         <Box sx={{ width: "3rem" }}/>
       </Toolbar>
