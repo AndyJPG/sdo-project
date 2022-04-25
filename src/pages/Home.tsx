@@ -31,7 +31,10 @@ const Home = () => {
           them and come up with the best solution for your website.</Typography>
         <Button variant="text">get in touch</Button>
       </Box>
-
+      <Box sx={{ border: "1px solid red" }}>
+        <Typography variant="h5">Looking for digital solutions? We are here to help.</Typography>
+        <Button variant="contained">get in touch</Button>
+      </Box>
     </>
   )
 }
