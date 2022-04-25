@@ -54,6 +54,17 @@ const Home = () => {
           <Typography variant="body2">Web design & development</Typography>
         </Box>
       </Box>
+      <Box>
+        <Typography variant="h6">Get a feeling of how we can help your business with cases we have done/</Typography>
+        <Button variant="text">see all cases</Button>
+        <Box>
+          <img alt="tell us about your ideas"
+               width="100%"
+               src="https://firebasestorage.googleapis.com/v0/b/website-project-3ea2e.appspot.com/o/studio-design-ocean%2Ftell-us-about-shadow.png?alt=media&token=3afa7b9b-231f-4453-8d77-95a83e1cd295"/>
+          <Typography variant="subtitle1">Duuet - Web Design</Typography>
+          <Typography variant="body2">Branding, Web Design & Development</Typography>
+        </Box>
+      </Box>
     </>
   )
 }
