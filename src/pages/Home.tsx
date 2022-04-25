@@ -65,6 +65,9 @@ const Home = () => {
           <Typography variant="body2">Branding, Web Design & Development</Typography>
         </Box>
       </Box>
+      <Box>
+        <Typography variant="body2">&copy; 2022 Privacy</Typography>
+      </Box>
     </>
   )
 }
