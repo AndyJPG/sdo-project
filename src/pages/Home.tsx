@@ -9,7 +9,7 @@ const Home = () => {
       <Navbar/>
       <Box sx={{ border: "1px solid black" }}>
         <Typography variant="body2" sx={{ textTransform: "uppercase" }}>build your website with ease</Typography>
-        <Typography variant="h4">Create a website and standout online</Typography>
+        <Typography variant="h5">Create a website and standout online</Typography>
         <Typography variant="body1">We help you to construct complex ideas and to create, design and develop your
           website as what you want it to be.</Typography>
         <Button variant="contained">learn more</Button>
@@ -32,8 +32,27 @@ const Home = () => {
         <Button variant="text">get in touch</Button>
       </Box>
       <Box sx={{ border: "1px solid red" }}>
-        <Typography variant="h5">Looking for digital solutions? We are here to help.</Typography>
+        <Typography variant="h6">Looking for digital solutions? We are here to help.</Typography>
         <Button variant="contained">get in touch</Button>
+      </Box>
+      <Box sx={{ border: "1px solid green" }}>
+        <Typography variant="h5">Everything you need to grow online</Typography>
+        <Typography variant="body1">Tell us your goal and only choose what you need to take you online. Whether it's for
+          digital marketing, web development, or visual appearance, our team will be there to help.</Typography>
+        <Box>
+          <Box sx={{ height: "8rem" }}>
+            <img alt="tell us about your ideas"
+                 height="100%"
+                 src="https://firebasestorage.googleapis.com/v0/b/website-project-3ea2e.appspot.com/o/studio-design-ocean%2Ftell-us-about-shadow.png?alt=media&token=3afa7b9b-231f-4453-8d77-95a83e1cd295"/>
+          </Box>
+          <Typography variant="body2">Web design & development</Typography>
+          <Box sx={{ height: "8rem" }}>
+            <img alt="tell us about your ideas"
+                 height="100%"
+                 src="https://firebasestorage.googleapis.com/v0/b/website-project-3ea2e.appspot.com/o/studio-design-ocean%2Ftell-us-about-shadow.png?alt=media&token=3afa7b9b-231f-4453-8d77-95a83e1cd295"/>
+          </Box>
+          <Typography variant="body2">Web design & development</Typography>
+        </Box>
       </Box>
     </>
   )
