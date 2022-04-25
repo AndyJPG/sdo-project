@@ -1,17 +1,18 @@
 import { CircularProgress } from "@mui/material"
 import React, { lazy } from "react"
 import "./App.css"
+import ThemeContextProvider from "./context/ThemeContextProvider"
 
-const Home = lazy(() => import('./pages/Home'))
+const Home = lazy(() => import("./pages/Home"))
 
 function App() {
   return (
-    <div className="App">
+    <ThemeContextProvider>
       <React.Suspense fallback={<CircularProgress/>}>
         <Home/>
       </React.Suspense>
-    </div>
-  );
+    </ThemeContextProvider>
+  )
 }
 
-export default App;
+export default App
