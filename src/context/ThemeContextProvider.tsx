@@ -28,7 +28,7 @@ const theme = createTheme(baseTheme, {
     MuiButton: {
       variants: [
         {
-          props: { variant: "contained", size: "small" },
+          props: { variant: "contained" },
           style: {
             borderRadius: "99rem",
             textTransform: "capitalize",

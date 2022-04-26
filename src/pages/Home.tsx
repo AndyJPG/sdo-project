@@ -1,4 +1,4 @@
-import { Box, Button, Typography } from "@mui/material"
+import { Box, Button, Container, Typography } from "@mui/material"
 import { lazy } from "react"
 
 const Navbar = lazy(() => import("../components/Navbar"))
@@ -7,13 +7,41 @@ const Home = () => {
   return (
     <>
       <Navbar/>
-      <Box sx={{ border: "1px solid black" }}>
-        <Typography variant="body2" sx={{ textTransform: "uppercase" }}>build your website with ease</Typography>
-        <Typography variant="h5">Create a website and standout online</Typography>
-        <Typography variant="body1">We help you to construct complex ideas and to create, design and develop your
+      <Container sx={{
+        pt: "7.5rem",
+        display: "flex",
+        flexWrap: "wrap",
+        justifyContent: "center",
+        background: "linear-gradient(45deg, rgba(203,210,228,1) 0%, rgba(243,248,251,1) 100%)"
+      }}>
+        <Typography variant="subtitle2"
+                    sx={{ textTransform: "uppercase", textAlign: "center", fontSize: "0.7rem", mb: "1rem" }}>build
+          your website with
+          ease</Typography>
+        <Typography variant="h5" sx={{ textAlign: "center", mb: "1.8rem" }}>Create a website and
+          standout
+          online</Typography>
+        <Typography variant="body2" sx={{ textAlign: "center", fontSize: "0.8rem", mb: "2rem" }}>We help you to
+          construct complex
+          ideas and to create,
+          design and develop your
           website as what you want it to be.</Typography>
-        <Button variant="contained">learn more</Button>
-      </Box>
+        <Button variant="contained" size="large" sx={{ mb: "4rem" }}>learn more</Button>
+        <Box
+          sx={{
+            height: "15rem",
+            width: "100%",
+            display: "flex",
+            justifyContent: "center",
+            overflow: "hidden",
+            pl: "1.2rem"
+          }}>
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/website-project-3ea2e.appspot.com/o/studio-design-ocean%2Fphone-mockup-1.png?alt=media&token=7446d79e-ffca-4561-b6c2-85d64ce2150e"
+            alt="phone demo"
+            style={{ height: "160%" }}/>
+        </Box>
+      </Container>
       <Box sx={{
         border: "1px solid blue",
         display: "flex",
