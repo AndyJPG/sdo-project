@@ -7,41 +7,82 @@ const Home = () => {
   return (
     <>
       <Navbar/>
-      <Container sx={{
-        pt: "7.5rem",
-        display: "flex",
-        flexWrap: "wrap",
-        justifyContent: "center",
+      <Box sx={{
         background: "linear-gradient(45deg, rgba(203,210,228,1) 0%, rgba(243,248,251,1) 100%)"
       }}>
-        <Typography variant="subtitle2"
-                    sx={{ textTransform: "uppercase", textAlign: "center", fontSize: "0.7rem", mb: "1rem" }}>build
-          your website with
-          ease</Typography>
-        <Typography variant="h5" sx={{ textAlign: "center", mb: "1.8rem" }}>Create a website and
-          standout
-          online</Typography>
-        <Typography variant="body2" sx={{ textAlign: "center", fontSize: "0.8rem", mb: "2rem" }}>We help you to
-          construct complex
-          ideas and to create,
-          design and develop your
-          website as what you want it to be.</Typography>
-        <Button variant="contained" size="large" sx={{ mb: "4rem" }}>learn more</Button>
-        <Box
-          sx={{
-            height: "15rem",
-            width: "100%",
+        <Container maxWidth="xl" sx={{
+          pt: { xs: "7.5rem", md: "9rem", lg: "12rem" },
+          pb: { md: "3rem", lg: "6rem" },
+          display: "flex",
+          flexWrap: { xs: "wrap", md: "nowrap" },
+          justifyContent: { xs: "center", md: "space-between" },
+          alignItems: { md: "center" }
+        }}>
+          <Box sx={{
+            width: { md: "35%" },
             display: "flex",
-            justifyContent: "center",
-            overflow: "hidden",
-            pl: "1.2rem"
+            flexWrap: "wrap",
+            justifyContent: { xs: "center", md: "start" }
           }}>
-          <img
-            src="https://firebasestorage.googleapis.com/v0/b/website-project-3ea2e.appspot.com/o/studio-design-ocean%2Fphone-mockup-1.png?alt=media&token=7446d79e-ffca-4561-b6c2-85d64ce2150e"
-            alt="phone demo"
-            style={{ height: "160%" }}/>
-        </Box>
-      </Container>
+            <Typography variant="subtitle2"
+                        sx={{
+                          color: theme => theme.palette.text.secondary,
+                          textTransform: "uppercase",
+                          textAlign: { xs: "center", md: "left" },
+                          fontSize: { xs: "0.7rem", md: "0.8rem" },
+                          mb: "1rem",
+                          width: "100%"
+                        }}>build
+              your website with
+              ease</Typography>
+            <Typography variant="h5"
+                        sx={{ display: { md: "none" }, textAlign: { xs: "center", md: "left" }, mb: "1.8rem" }}>Create a
+              website and
+              standout
+              online</Typography>
+            <Typography variant="h4" sx={{
+              display: { xs: "none", md: "block" },
+              textAlign: { xs: "center", md: "left" },
+              mb: "1.8rem"
+            }}>Create a website and
+              standout
+              online</Typography>
+            <Typography variant="body2"
+                        sx={{
+                          textAlign: { xs: "center", md: "left" },
+                          fontSize: { xs: "0.8rem", md: "0.9rem" },
+                          mb: "2rem"
+                        }}>We
+              help you to
+              construct complex
+              ideas and to create,
+              design and develop your
+              website as what you want it to be.</Typography>
+            <Button variant="contained" size="small" sx={{ mb: "4rem" }}>learn more</Button>
+          </Box>
+          <Box sx={{ display: { xs: "none", md: "block" }, width: "55%", mt: "-2rem" }}>
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/website-project-3ea2e.appspot.com/o/studio-design-ocean%2Fmobile-desktop-image.png?alt=media&token=90964075-4d18-42b5-9f78-6a40cfca4589"
+              alt="mobile desktop demo"
+              style={{ width: "100%" }}/>
+          </Box>
+          <Box
+            sx={{
+              height: "15rem",
+              width: "100%",
+              display: { xs: "flex", md: "none" },
+              justifyContent: "center",
+              overflow: "hidden",
+              pl: "1.2rem"
+            }}>
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/website-project-3ea2e.appspot.com/o/studio-design-ocean%2Fphone-mockup-1.png?alt=media&token=7446d79e-ffca-4561-b6c2-85d64ce2150e"
+              alt="phone demo"
+              style={{ height: "160%" }}/>
+          </Box>
+        </Container>
+      </Box>
+
       <Box sx={{
         border: "1px solid blue",
         display: "flex",
