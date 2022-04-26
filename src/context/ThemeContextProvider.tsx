@@ -18,12 +18,37 @@ const baseTheme = createTheme({
   typography: {
     fontFamily: [
       "Comfortaa",
-      "cursive"
+      "sans-serif"
     ].join(",")
   }
 })
 
-const theme = createTheme(baseTheme, {})
+const theme = createTheme(baseTheme, {
+  components: {
+    MuiButton: {
+      variants: [
+        {
+          props: { variant: "contained", size: "small" },
+          style: {
+            borderRadius: "99rem",
+            textTransform: "capitalize",
+            padding: "0.4rem 1.6rem"
+          }
+        },
+        {
+          props: { variant: "text", size: "small" },
+          style: {
+            fontWeight: "bold",
+            ":hover": {
+              color: baseTheme.palette.primary.main,
+              backgroundColor: "transparent"
+            }
+          }
+        }
+      ]
+    }
+  }
+})
 
 const ThemeContextProvider = (props: { children?: React.ReactNode }) => {
   return <ThemeProvider theme={theme}>{props.children}</ThemeProvider>
