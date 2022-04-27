@@ -32,13 +32,16 @@ const theme = createTheme(baseTheme, {
           style: {
             borderRadius: "99rem",
             textTransform: "capitalize",
-            padding: "0.5rem 2.2rem"
+            padding: "0.5rem 2.2rem",
+            boxShadow: "none"
           }
         },
         {
-          props: { variant: "text", size: "small" },
+          props: { variant: "text" },
           style: {
-            fontWeight: "bold",
+            fontWeight: 900,
+            textTransform: "capitalize",
+            padding: 0,
             ":hover": {
               color: baseTheme.palette.primary.main,
               backgroundColor: "transparent"
