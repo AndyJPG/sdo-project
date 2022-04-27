@@ -8,7 +8,7 @@ const baseTheme = createTheme({
       main: "#3382b9"
     },
     secondary: {
-      main: "#1D1D1D"
+      main: "#084c76"
     },
     text: {
       primary: "#1D1D1D",
@@ -33,7 +33,8 @@ const theme = createTheme(baseTheme, {
             borderRadius: "99rem",
             textTransform: "capitalize",
             padding: "0.5rem 2.2rem",
-            boxShadow: "none"
+            boxShadow: "none",
+            fontWeight: 900
           }
         },
         {

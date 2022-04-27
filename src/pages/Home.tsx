@@ -5,6 +5,7 @@ import BoundarySuspense from "../utils/BoundarySuspense"
 const Navbar = lazy(() => import("../components/Navbar"))
 const Jumbotron = lazy(() => import("../components/Jumbotron"))
 const DialogSectionList = lazy(() => import("../components/DialogSectionList"))
+const CallToAction = lazy(() => import("../components/CallToAction"))
 
 const Home = () => {
 
@@ -20,11 +21,9 @@ const Home = () => {
       <BoundarySuspense name="dialog section list">
         <DialogSectionList/>
       </BoundarySuspense>
-
-      <Box sx={{ border: "1px solid red" }}>
-        <Typography variant="h6">Looking for digital solutions? We are here to help.</Typography>
-        <Button variant="contained">get in touch</Button>
-      </Box>
+      <BoundarySuspense name="call to action">
+        <CallToAction/>
+      </BoundarySuspense>
       <Box sx={{ border: "1px solid green" }}>
         <Typography variant="h5">Everything you need to grow online</Typography>
         <Typography variant="body1">Tell us your goal and only choose what you need to take you online. Whether it's for
