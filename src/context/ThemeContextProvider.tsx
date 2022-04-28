@@ -19,7 +19,10 @@ const baseTheme = createTheme({
     fontFamily: [
       "Comfortaa",
       "sans-serif"
-    ].join(",")
+    ].join(","),
+    h5: {
+      marginBottom: "1rem"
+    }
   }
 })
 
