@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "website-project-3ea2e"
+  },
+  "targets": {
+    "website-project-3ea2e": {
+      "hosting": {
+        "sdo-site": [
+          "studio-design-ocean"
+        ]
+      }
+    }
+  }
+}
