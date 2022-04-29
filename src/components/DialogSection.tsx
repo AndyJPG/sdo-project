@@ -43,7 +43,7 @@ const DialogSection = (props: DialogSectionProps) => {
             width: { md: "65%" }
           }}>
             <Typography variant="h5" sx={{ display: { md: "none" } }}>{title}</Typography>
-            <Typography variant="h4" sx={{ pb: "1rem", display: { xs: "none", md: "block" } }}>{title}</Typography>
+            <Typography variant="h4" sx={{ display: { xs: "none", md: "block" } }}>{title}</Typography>
             <Typography variant="body2"
                         sx={{
                           textAlign: { xs: "center", md: "left" },
