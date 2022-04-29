@@ -1,4 +1,4 @@
-import { Box, Button, Container, Typography } from "@mui/material"
+import { Box, Button, Container, Divider, Typography } from "@mui/material"
 import { lazy } from "react"
 import BoundarySuspense from "../utils/BoundarySuspense"
 
@@ -6,6 +6,7 @@ const Navbar = lazy(() => import("../components/Navbar"))
 const Jumbotron = lazy(() => import("../components/Jumbotron"))
 const DialogSectionList = lazy(() => import("../components/DialogSectionList"))
 const CallToAction = lazy(() => import("../components/CallToAction"))
+const ServicesSection = lazy(() => import("../components/ServicesSection"))
 
 const Home = () => {
 
@@ -24,25 +25,12 @@ const Home = () => {
       <BoundarySuspense name="call to action">
         <CallToAction/>
       </BoundarySuspense>
-      <Box sx={{ border: "1px solid green" }}>
-        <Typography variant="h5">Everything you need to grow online</Typography>
-        <Typography variant="body1">Tell us your goal and only choose what you need to take you online. Whether it's for
-          digital marketing, web development, or visual appearance, our team will be there to help.</Typography>
-        <Box>
-          <Box sx={{ height: "8rem" }}>
-            <img alt="tell us about your ideas"
-                 height="100%"
-                 src="https://firebasestorage.googleapis.com/v0/b/website-project-3ea2e.appspot.com/o/studio-design-ocean%2Ftell-us-about-shadow.png?alt=media&token=3afa7b9b-231f-4453-8d77-95a83e1cd295"/>
-          </Box>
-          <Typography variant="body2">Web design & development</Typography>
-          <Box sx={{ height: "8rem" }}>
-            <img alt="tell us about your ideas"
-                 height="100%"
-                 src="https://firebasestorage.googleapis.com/v0/b/website-project-3ea2e.appspot.com/o/studio-design-ocean%2Ftell-us-about-shadow.png?alt=media&token=3afa7b9b-231f-4453-8d77-95a83e1cd295"/>
-          </Box>
-          <Typography variant="body2">Web design & development</Typography>
-        </Box>
-      </Box>
+      <BoundarySuspense name="Services section">
+        <ServicesSection/>
+      </BoundarySuspense>
+      <Container maxWidth="xl">
+        <Divider/>
+      </Container>
       <Box>
         <Typography variant="h6">Get a feeling of how we can help your business with cases we have done/</Typography>
         <Button variant="text">see all cases</Button>

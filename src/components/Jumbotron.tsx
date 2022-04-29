@@ -31,7 +31,7 @@ const Jumbotron = () => {
             your website with
             ease</Typography>
           <Typography variant="h5"
-                      sx={{ display: { md: "none" }, textAlign: { xs: "center", md: "left" }, mb: "1.8rem" }}>Create a
+                      sx={{ display: { md: "none" }, textAlign: { xs: "center", md: "left" } }}>Create a
             website and
             standout
             online</Typography>
