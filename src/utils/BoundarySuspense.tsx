@@ -1,4 +1,4 @@
-import { Alert, Button, CircularProgress } from "@mui/material"
+import { Alert, Box, Button, CircularProgress } from "@mui/material"
 import React from "react"
 import { ErrorBoundary } from "react-error-boundary"
 
@@ -16,7 +16,8 @@ const BoundarySuspense = (props: BoundarySuspenseInterface) => {
              action={<Button color="inherit" size="small" onClick={() => resetErrorBoundary()}>retry</Button>}>Unable to
         render {name || "UI"} with error: {error.message}</Alert>
     )}>
-      <React.Suspense fallback={fallbackUI || <CircularProgress/>}>
+      <React.Suspense fallback={fallbackUI ||
+          <Box sx={{ width: "100%", py: "3rem", display: "flex", justifyContent: "center" }}><CircularProgress/></Box>}>
         {children}
       </React.Suspense>
     </ErrorBoundary>
