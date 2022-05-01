@@ -5,7 +5,7 @@ import FacebookIcon from "@mui/icons-material/Facebook"
 const Footer = () => {
   return (
     <Box>
-      <Container sx={{
+      <Container maxWidth="xl" sx={{
         display: "flex",
         flexWrap: "wrap",
         pt: "2rem",
