@@ -1,4 +1,4 @@
-import { Box, Container, Divider, Typography } from "@mui/material"
+import { Container, Divider } from "@mui/material"
 import { lazy } from "react"
 import BoundarySuspense from "../utils/BoundarySuspense"
 
