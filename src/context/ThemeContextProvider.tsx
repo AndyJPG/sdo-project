@@ -1,4 +1,4 @@
-import { createStyles, createTheme, GlobalStyles, ThemeProvider } from "@mui/material"
+import { createTheme, GlobalStyles, ThemeProvider } from "@mui/material"
 import * as React from "react"
 
 const baseTheme = createTheme({
