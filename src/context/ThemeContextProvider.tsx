@@ -1,4 +1,4 @@
-import { createTheme, ThemeProvider } from "@mui/material"
+import { createStyles, createTheme, GlobalStyles, ThemeProvider } from "@mui/material"
 import * as React from "react"
 
 const baseTheme = createTheme({
@@ -60,8 +60,14 @@ const theme = createTheme(baseTheme, {
   }
 })
 
+const globalStyles = <GlobalStyles styles={{
+  ".swiper-pagination-bullet-active": {
+    backgroundColor: "#3382b9 !important"
+  }
+}}/>
+
 const ThemeContextProvider = (props: { children?: React.ReactNode }) => {
-  return <ThemeProvider theme={theme}>{props.children}</ThemeProvider>
+  return <ThemeProvider theme={theme}>{globalStyles}{props.children}</ThemeProvider>
 }
 
 export default ThemeContextProvider
