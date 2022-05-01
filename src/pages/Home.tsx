@@ -8,6 +8,7 @@ const DialogSectionList = lazy(() => import("../components/DialogSectionList"))
 const CallToAction = lazy(() => import("../components/CallToAction"))
 const ServicesSection = lazy(() => import("../components/ServicesSection"))
 const UseCaseSection = lazy(() => import("../components/UseCaseSection"))
+const Footer = lazy(() => import("../components/Footer"))
 
 const Home = () => {
 
@@ -35,9 +36,9 @@ const Home = () => {
       <BoundarySuspense name="Use case section">
         <UseCaseSection/>
       </BoundarySuspense>
-      <Box>
-        <Typography variant="body2">&copy; 2022 Privacy</Typography>
-      </Box>
+      <BoundarySuspense name="footer">
+        <Footer/>
+      </BoundarySuspense>
     </>
   )
 }
